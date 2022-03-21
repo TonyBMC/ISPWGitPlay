@@ -1,0 +1,32 @@
+node {
+  stage ('Checkout') 
+  {
+    // Get the code from the Git repository
+    checkout scm
+  }
+
+  stage('Git to ISPW Synchronization')
+  { 
+	gitToIspwIntegration app: 'PLAY', 
+	branchMapping: '''*master* => QA, per-branch'
+    bug* => HLD, per-branch
+    feature1* => STG1, per-branch
+    feature2* => STG2, per-branch''',
+	connectionId: ''91bae501-8b4d-4155-909d-2ad5aa9f3131', 
+	credentialsId: 'PINAYA0', 
+	gitCredentialsId: 'GithubTokenTony',
+	gitRepoUrl: ''https://github.com/TonyBMC/ISPWGitPlay.git', 
+	runtimeConfig: 'ISPW', 
+	stream: 'PLAY'
+  }
+
+  stage('Build ISPW assignment')
+  {
+	ispwOperation connectionId: '91bae501-8b4d-4155-909d-2ad5aa9f3131', 
+	consoleLogResponseBody: true, 
+	credentialsId: 'TonyCES', 
+	ispwAction: 'BuildAssignment', 
+	ispwRequestBody: '''buildautomatically = true
+	'''
+  }
+}

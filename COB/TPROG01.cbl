@@ -1,7 +1,7 @@
 000100 IDENTIFICATION DIVISION.
 000200 PROGRAM-ID.    TPROG01.
 000300 AUTHOR.        BENCHMARK ISPW TRAINING.
-000400 DATE-WRITTEN.  JANUARY 24TH, 1996.
+000400 DATE-WRITTEN.  JANUARY 24TH, 1995.
 000500 DATE-COMPILED.
 000600
 000700********************************************************
@@ -22,7 +22,7 @@
 002200*  DD/MM/YY  PROGRAMMER  CHANGES
 002300*  ********  **********  *******
 002400*  96/01/24  ISPW        NEW PROGRAM
-      *  30/04/16  Ed          Test 1
+      *  30/04/16  Ed          Test 2
 002500* ======================================================
 002600 ENVIRONMENT DIVISION.
 002700 CONFIGURATION SECTION.

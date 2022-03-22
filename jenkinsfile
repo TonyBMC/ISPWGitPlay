@@ -12,7 +12,7 @@ node {
     bug* => HLD, per-branch
     feature1* => STG1, per-branch
     feature2* => STG2, per-branch''',
-	connectionId: ''91bae501-8b4d-4155-909d-2ad5aa9f3131', 
+	connectionId: '91bae501-8b4d-4155-909d-2ad5aa9f3131', 
 	credentialsId: 'PINAYA0', 
 	gitCredentialsId: 'GithubTokenTony',
 	gitRepoUrl: ''https://github.com/TonyBMC/ISPWGitPlay.git', 

@@ -22,7 +22,7 @@
 002200*  DD/MM/YY  PROGRAMMER  CHANGES
 002300*  ********  **********  *******
 002400*  96/01/24  ISPW        NEW PROGRAM
-      *  30/04/16  Ed          Test 2
+      *  30/04/16  Ed          Test 3
 002500* ======================================================
 002600 ENVIRONMENT DIVISION.
 002700 CONFIGURATION SECTION.
